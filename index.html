@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculo-AllexSilva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Currículo de Allex Silva</h1>
+        <nav>
+            <ul>
+                <li><a href="#summary">Resumo</a></li>
+                <li><a href="#education">Educação</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="generate_pdf.php" target="_blank">Gerar PDF Do Currículo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 id="summary">Resumo</h2>
+        <p id="summaryText">Meu nome é Allex Cleyton Will Silva e sou um profissional dedicado e apaixonado por tecnologia. <br>
+            desde jovem, sempre tive interesse em tecnologia, o que me levou a seguir uma carreira na área de desenvolvimento web. <br>
+        Tenho experiência em desenvolvimento web, com habilidades em HTML, CSS, JavaScript e PHP. Sou comprometido com a qualidade do meu trabalho e estou sempre buscando aprender novas tecnologias para aprimorar minhas habilidades. Estou em busca de oportunidades para aplicar meus conhecimentos e contribuir para o sucesso de projetos inovadores.
+        </p>
+    </section>
+
+    <section>
+        <h2 id="education">Educação</h2>
+        <ul>
+            <li><strong>Ensino Médio Completo</strong> - IFES Campus Centro-Serrano (2022-2025)</li>
+            <li><strong>Curso Técnico em Administracao</strong> - IFES Campus Centro-Serrano (2022-2025)</li>
+            <li><strong>Tecnologo em Analise e Desenvolvimento De Sistemas</strong> - Estacio-Vila Velha (2026-Cursando)</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2 id="skills">Habilidades</h2>
+        <ul>
+            <li>Desenvolvimento Web: HTML, CSS, JavaScript, PHP</li>
+            <li>Banco de Dados: MySQL</li>
+            <li>Controle de Versão: Git</li>
+            <li>Resolução de Problemas e Pensamento Crítico</li>
+            <li>Trabalho em Equipe e Comunicação Eficaz</li>
+        </ul>
+    </section>
+
+    <section id="add-data">
+        <h2>Adicionar Novos Dados ao Currículo</h2>
+        <form id="add-data-form">
+            <label for="newSkill">Nova Habilidade:</label>
+            <input type="text" id="newSkill" name="newSkill" required>
+            
+            <label for="newExperience">Nova Experiência:</label>
+            <input type="text" id="newExperience" name="newExperience" required>
+
+            <button type="submit">Adicionar Dados</button>
+        </form>
+        <div id="responseMessage"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
