@@ -38,28 +38,34 @@
     
     <section>
         <h2 id="skills">Habilidades</h2>
-        <ul>
+        <ul id="skills-list">
             <li>Desenvolvimento Web: HTML, CSS, JavaScript, PHP</li>
             <li>Banco de Dados: MySQL</li>
             <li>Controle de Versão: Git</li>
-            <li>Resolução de Problemas e Pensamento Crítico</li>
-            <li>Trabalho em Equipe e Comunicação Eficaz</li>
         </ul>
     </section>
 
+    <section>
+        <h2 id="experiences">Experiências</h2>
+        <ul id="experience-list">
+            <!-- experiências carregadas via AJAX -->
+        </ul>
+    </section>
+    
     <section id="add-data">
         <h2>Adicionar Novos Dados ao Currículo</h2>
         <form id="add-data-form">
             <label for="newSkill">Nova Habilidade:</label>
-            <input type="text" id="newSkill" name="newSkill" required>
+            <input type="text" id="newSkill" name="newSkill" placeholder="Ex: JavaScript, PHP" required>
             
             <label for="newExperience">Nova Experiência:</label>
-            <input type="text" id="newExperience" name="newExperience" required>
+            <input type="text" id="newExperience" name="newExperience" placeholder="Ex: Desenvolvedor na Empresa X" required>
 
             <button type="submit">Adicionar Dados</button>
         </form>
         <div id="responseMessage"></div>
     </section>
+
 
     <script src="script.js"></script>
 </body>

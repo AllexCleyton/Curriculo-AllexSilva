@@ -1,7 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 require('fpdf/fpdf.php'); //incluso a biblioteca FPDF
 
 class PDF extends FPDF
@@ -51,12 +48,11 @@ $skills = [
 foreach ($skills as $job) {
     $pdf->Cell(0,10, '- ' . $job, 0, 1);
 }
-$pdf->Ln(10);
 
 //contato
 $pdf->Cell(0,10, 'Contato:', 0, 1);
 $pdf->Cell(0,10, 'Email: alexcleitor@hotmail.com', 0, 1);
 $pdf->Cell(0,10, 'Telefone: (27) 997102937', 0, 1);
-$pdf->Output('D','Allex_Silva_CV.pdf'); //gera o PDF para download
+$pdf->Output('D','Allex_Silva_Curriculo.pdf'); //gera o PDF para download
 
 ?>
