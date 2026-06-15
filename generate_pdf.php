@@ -49,10 +49,15 @@ foreach ($skills as $job) {
     $pdf->Cell(0,10, '- ' . $job, 0, 1);
 }
 
+//objetivo
+$pdf->Cell(0,10, 'Objetivo:', 0, 1);
+$pdf->MultiCell(0,10, 'Busco uma posição desafiadora como desenvolvedor web onde possa aplicar e melhorar minhas habilidades técnicas e contribuir para o sucesso da empresa. Estou comprometido em aprender continuamente e crescer profissionalmente.');
+
 //contato
 $pdf->Cell(0,10, 'Contato:', 0, 1);
 $pdf->Cell(0,10, 'Email: alexcleitor@hotmail.com', 0, 1);
 $pdf->Cell(0,10, 'Telefone: (27) 997102937', 0, 1);
+$pdf->Cell(0,10, 'LinkedIn: linkedin.com/in/allex-cleyton-will-silva', 0, 1);
 $pdf->Output('D','Allex_Silva_Curriculo.pdf'); //gera o PDF para download
 
 ?>
