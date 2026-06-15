@@ -1,1 +1,1 @@
-meu curriculo, nele eu vou apresentar minha competencias e habilidades e competencias.
+no meu curriculo vou apresentar as minhas competencias e habilidades.
